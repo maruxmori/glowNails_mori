@@ -1,0 +1,109 @@
+/*-----Rotacion del logo HEADER --------------------------*/
+.logoHeaderAnim {
+    border-radius: 4em;
+    -webkit-animation: logoHeaderAnim 1.5s steps(12, end) infinite both;
+    animation: logoHeaderAnim 1.5s steps(12, end) infinite both; }
+  
+@-webkit-keyframes logoHeaderAnim {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0); }
+    100% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); } }
+  
+@keyframes logoHeaderAnim {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0); }
+    100% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+}
+/*-----Rotacion del logo PROMOS --------------------------*/
+.logoPromo {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+@-webkit-keyframes logoPromo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes logoPromo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*------Flip logos chicos----------*/
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+/*--------- Zoom Out Imagenes-----------*/
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s ease-in-out both;
+            animation: scale-up-center 0.4s ease-in-out both;
+  }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

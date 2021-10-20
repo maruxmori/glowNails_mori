@@ -1,0 +1,14 @@
+.servicios{
+
+    &__item{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color:#cc9fdb;
+        box-shadow: 1px 1px 5px 2px #702ff131;
+    }
+
+    img{
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,25 @@
+@import "./media";
+.preguntas{
+    margin: 1em;
+    @include tablet{
+        margin: 2.5em;
+    }
+    @include desktop{
+        margin: 6em;
+    }
+    &__titulo{
+        text-shadow: 3px 2px $azulSombra;
+    }
+    &__item{
+        text-align: center;
+        background: linear-gradient(#cd8bcc6e,#9e60b36e);
+        color: white;
+    }
+}
+
+.accordion-button{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.541);
+}
