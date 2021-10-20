@@ -21,37 +21,27 @@
       transform: rotate(90deg); }
 }
 /*-----Rotacion del logo PROMOS --------------------------*/
+
 .logoPromo {
-	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
-	        animation: pulsate-fwd 1s ease-in-out infinite both;
-}
+  border-radius: 4em;
+  -webkit-animation: logoPromo 5s steps(24, end) infinite both;
+  animation: logoPromo 5s steps(24, end) infinite both; }
+
 @-webkit-keyframes logoPromo {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
 @keyframes logoPromo {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 }
 
 /*------Flip logos chicos----------*/
