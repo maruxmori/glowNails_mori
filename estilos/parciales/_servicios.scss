@@ -1,7 +1,7 @@
+@import "./media";
 .servicios{
 
     &__item{
-        margin: 1em;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -21,6 +21,12 @@
         &:hover{
             background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(251,245,251,1) 44%, rgba(245,231,245,0.9) 66%, rgba(193,130,216,0.95) 83%, rgba(145,137,221,0.98) 100%);
+            h2{
+                color: #c182d8;
+            }
+            ul{
+                color: #7c72da;
+            }
         }
     }
 

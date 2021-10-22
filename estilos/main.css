@@ -83,42 +83,6 @@ header .navbar a:hover {
   }
 }
 
-/*-----Rotacion del logo PROMOS --------------------------*/
-.logoPromo {
-  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
-  animation: pulsate-fwd 1s ease-in-out infinite both;
-}
-
-@-webkit-keyframes logoPromo {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes logoPromo {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
 /*------Flip logos chicos----------*/
 .slide-top {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -201,42 +165,6 @@ header .navbar a:hover {
   100% {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-  }
-}
-
-/*-----Rotacion del logo PROMOS --------------------------*/
-.logoPromo {
-  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
-  animation: pulsate-fwd 1s ease-in-out infinite both;
-}
-
-@-webkit-keyframes logoPromo {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes logoPromo {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
   }
 }
 
@@ -740,13 +668,37 @@ h4, p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #cc9fdb;
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.95), rgba(245, 231, 245, 0.9), rgba(205, 139, 204, 0.9), rgba(164, 110, 244, 0.9), rgba(153, 102, 255, 0.95));
   -webkit-box-shadow: 1px 1px 5px 2px #702ff131;
           box-shadow: 1px 1px 5px 2px #702ff131;
+  color: white;
+}
+
+.servicios__item h2 {
+  margin: 1em;
+}
+
+.servicios__item ul {
+  margin: 1em;
+}
+
+.servicios__item:hover {
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.95) 0%, #fbf5fb 44%, rgba(245, 231, 245, 0.9) 66%, rgba(193, 130, 216, 0.95) 83%, rgba(145, 137, 221, 0.98) 100%);
+}
+
+.servicios__item:hover h2 {
+  color: #c182d8;
+}
+
+.servicios__item:hover ul {
+  color: #7c72da;
 }
 
 .servicios img {
   max-width: 80%;
+  border: solid 1px rgba(255, 255, 255, 0.829);
 }
 
 .promociones {
