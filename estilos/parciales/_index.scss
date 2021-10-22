@@ -241,6 +241,25 @@ h4, p {
     }
 }
 
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    overflow: hidden;
+    h3{
+        width: 100%;
+        display: block;
+        margin-left: 2em;
+    }
+    img{
+        width: 100%;
+        &:hover{
+            box-shadow: 2px 2px black;
+        }
+    }
+}
+
 .piePagina{
     display: flex;
     align-items: center;
