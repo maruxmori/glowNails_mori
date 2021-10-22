@@ -1,14 +1,31 @@
 .servicios{
 
     &__item{
+        margin: 1em;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color:#cc9fdb;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,0.95), rgba(245,231,245,0.9), rgba(205,139,204,0.9), rgba(164,110,244,0.9), rgba(153,102,255,0.95));
         box-shadow: 1px 1px 5px 2px #702ff131;
+        color: white;
+
+        h2{
+            margin: 1em;
+        }
+
+        ul{
+            margin: 1em;
+        }
+
+        &:hover{
+            background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(251,245,251,1) 44%, rgba(245,231,245,0.9) 66%, rgba(193,130,216,0.95) 83%, rgba(145,137,221,0.98) 100%);
+        }
     }
 
     img{
         max-width: 80%;
+        clip: focus;
     }
 }
