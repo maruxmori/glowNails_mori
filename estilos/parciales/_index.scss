@@ -1,7 +1,6 @@
 @import "./media";
 @import "./animaciones";
 
-
 body {
     background-color: $lila;
     font-family: 'Josefin Sans', 'urbanist';
@@ -38,20 +37,29 @@ h4, p {
             font-family: 'Aclonica';
             text-align: center;
             color: white;
-            font-size: 4em;
-            text-shadow: 6px 6px #5c43ffa1;
+            font-size: 2.5em;
+            text-shadow: 3px 3px #5c43ffa1;
             position: absolute;
-            top: 2.5em;
+            top: 4em;
             right: 1rem;
+
+            @include celular{
+                font-size: 6em;
+                text-shadow: 3px 3px #5c43ffa1;
+                top: 2em;
+                right:1rem;  
+            }
 
             @include tablet{
                 font-size: 6em;
+                text-shadow: 3px 3px #5c43ffa1;
                 top: 2em;
                 right:1rem;  
             }
 
             @include desktop{
                 font-size: 8em;
+                text-shadow: 6px 6px #5c43ffa1;
                 top: 2em;
                 right: 1rem;
             }
@@ -59,12 +67,18 @@ h4, p {
 
         h2{
             position: absolute;
-            top: 15em;
+            top: 9em;
             right: 2rem;
             color: $violeta;
             font-weight: bolder;
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-shadow: 2px 2px #ffffff;
+
+            @include celular{
+                font-size: 1.3rem;
+                top: 14.5em;
+                right: 2rem;  
+            }
 
             @include tablet{
                 font-size: 1.3rem;
@@ -82,10 +96,16 @@ h4, p {
         p {
             text-align: right;
             color: white;
-            font-size: 1em;
+            font-size: 0.9em;
             position: absolute;
             top: 17em;
             right: 2em;
+
+            @include celular{
+                font-size: 1.3em;
+                top: 16em;
+                right: 2rem;  
+            }
 
             @include tablet{
                 font-size: 1.3em;
@@ -125,11 +145,16 @@ h4, p {
     top:5em;
         &__titulo{
             padding-left: 2em;
-            width: 50vw;
+            width: 80vw;
             height: auto;
+            @include celular{
+                width: 30em;
+                height: auto;
+            }
             @include tablet{
                     width: 30em;
-                    height: auto;}
+                    height: auto;
+                }
             }
 }
 
@@ -138,8 +163,13 @@ h4, p {
     justify-content: flex-end;
     box-sizing: content-box;
     position: relative;
-    top: -5em;
-    right: 3em;
+    top: 4.5em;
+    right: 1em;
+    @include tablet{
+        top: -5em;
+        right: 3em; 
+        }
+
     &__boton{
         display: flex;
         margin: 0;
@@ -149,7 +179,10 @@ h4, p {
            transform: scale(1.1) translateY(-5px);
               }
         img{
-            width: 8em;
+            width: 6em;
+            @include celular{
+                width: 8em;  
+                }
             @include tablet{
                 width: 10em;  
                 }
@@ -204,8 +237,12 @@ h4, p {
 
     &__titulo {
         color: white;
-        font-size: 3em;
-        text-shadow: 3px 3px #9966FF; }
+        font-size: 2em;
+        text-shadow: 3px 3px #9966FF;
+        @include celular{
+            font-size: 3em;
+        }
+    }
 
     &__boton{
             color: white;
