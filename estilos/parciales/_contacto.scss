@@ -7,19 +7,31 @@
     justify-content: center;
     flex-direction: column;
     padding: 2em;
-    height: 50vh;
-
-    h3{
+    &__titulo{
         color: white;
         font-size: 4em;
-        text-shadow: 4px 4px  #5C43FF;
+        margin:0;
     }
-    
-    p{
+    &__sub{
+        color: white;
+        text-shadow: 4px 4px  #5C43FF;
+        text-align: center;
+        font-size: 2em;
+        margin:0;
+        @include celular{
+            font-size: 2.5em; 
+        }
+        @include tablet{
+            font-size: 3.5em;
+        }
+        @include desktop{
+            font-size: 4em; 
+        }
+    }
+    &__texto{
         text-align: center;
     }
 }
-
 .inspiracion{
     display: flex;
     justify-content:center;
@@ -38,7 +50,6 @@
         flex-wrap: wrap;
     }
 }
-
 .redes{
     background-image: url(../imagenes/cuadroInstagram.svg);
     background-repeat:no-repeat;
@@ -46,25 +57,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: 110vw;
-
+    align-content: center;
+    height: 100vw;
     @include tablet{
         width: auto;
         height: 80vw;
     }
-
     @include desktop{
         width: auto;
         height: 50vw;
-        }
-
+    }
     &__titulo{
         font-size: 3em;
-        font-weight: 600;
+        font-weight: 700;
+        text-align: center;
     }
-
     &__nav{
         &--items{
             background: radial-gradient(#BECEFF, #9966ffab);
@@ -73,6 +80,7 @@
             padding: 1em;
             box-shadow: 1px 1px 8px 1px #5420bd75;
             display: inline-block;
+            align-content: center;
             
             & img{
                 width: 5em;
@@ -86,10 +94,49 @@
                 box-shadow: 2px 3px 8px 2px #5420bd75;
                 }
             }
-            
         }
 }
+.contacto{
+    &__titulo{
+        font-size: 2em;
+        margin-top: 2em;
+        @include celular{
+            font-size: 3em;
+        }
+        @include tablet{
+            font-size: 3.5em;
+        }
+        @include desktop{
+            font-size: 4em; 
+        }
 
-.mapa{
-    margin: 1rem;
+    }
+    .form{
+        margin: 0;
+        & textarea{
+            @include tablet{
+            width: 15em;
+            height: 10em;
+            }
+        }
+    }
+    .mapa{
+        margin: 1rem;
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+        @include celular{
+            width: 250px;
+            height: 300px;
+        }
+        @include tablet{
+            width: 300px;
+            height: 300px;
+        }
+        @include desktop{
+            width: 400px;
+            height: 400px;
+        }
+    }
+
 }

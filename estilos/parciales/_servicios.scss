@@ -44,8 +44,13 @@
     & img{
         width: 100%;
     }
+    .modal-footer{
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
-
 .card{
     &-text{
             color: #5C43FF;
@@ -54,4 +59,12 @@
                 margin: 0.5rem;
         }
     }
+}
+.btn-primary{
+    background-color: #5C43FF;
+    border-color: #543de7 ;
+}
+.btn-secondary{
+    background-color: rgb(165, 165, 165);
+    border: none;
 }

@@ -106,9 +106,9 @@
         </section>
 
         <section class="nosotros">
-            <h2 data-aos="fade-right">Nuestra historia</h2>
-            <h3 data-aos="fade-right"> Empredimiento autogestivo</h3>
-            <p data-aos="fade-right">Comenzamos en el mundo de la estetica de manos
+            <h2 class="nosotros__titulo" data-aos="fade-right">Nuestra historia</h2>
+            <h3 class="nosotros__sub" data-aos="fade-right"> Empredimiento autogestivo</h3>
+            <p class="nosotros__texto" data-aos="fade-right">Comenzamos en el mundo de la estetica de manos
                <br>
                como un pasamiento durante la pandemia,
                <br>
@@ -141,9 +141,10 @@
             </ul>
         </div>
 
-        <article class="redes">
-            <h3 class="redes__titulo" data-aos="fade-up">Nuestras redes</h3>
-            <ul class="redes__nav">
+        <article class="redes container-fluid">
+          <div class="row justify-content-around">
+            <h3 class="redes__titulo col-10" data-aos="fade-up">Nuestras redes</h3>
+            <ul class="redes__nav col-10">
                 
                 <li class="redes__nav--items" data-aos="zoom-in"> 
                 <img src="../imagenes/iconoig.svg" alt="Instagram">
@@ -152,66 +153,68 @@
                 <img src="../imagenes/iconofb.svg" alt="Facebook">
                 </li>
             </ul>
+          </div>
         </article>
         
-        <section>
-          <h2 data-aos="fade-right">CONTACTANOS</h2>
+        <section class="container-fluid contacto" id="contacto">
+          <div class="row justify-content-around">
+            <h2 class="contacto__titulo" data-aos="fade-right">CONTACTANOS</h2>
 
-          <div class="form">
-            <div class="form__caja">
-                
+            <div class="form col-10">
+              <div class="form__caja">
                 <form data-aos="fade-right" action="" method="GET">
-
-                    <h3 data-aos="fade-right">¡Dejanos tu mensaje!</h3>
-
-                   <div>
-                    <label for="nombre">Nombre:</label>
-                    <br>
-                    <input type="text" name="nombre" placeholder="Tu nombre..."/>
-                   </div>
-    
-                   <div>
-                    <label for="telefono">Telefono:</label>
-                    <br>
-
-                    <input type="number" name="number" placeholder="Un telefono o celular..."/>
-                   </div>
-                    
-                   <div>
-                       <label for="mail">E-mail:</label>
-                       <br>
-
-                       <input type="email" name="mail" placeholder="Un e-mail...">
-                   </div>
-    
-                   <div>
-                       <label for="servicios">Elegí el servicio que te gustaría:</label>
-                       <br>
-
-                       <select name="servicios">
-                           <option value="s">Semipermanente</option>
-                           <option value="k">Kapping</option>
-                           <option value="e">Esmaltado</option>
-                           <option value="b">Babyboomer</option>
-                       </select>
-                   </div>
-    
-                   <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <br>
-
-                    <textarea name="mensaje" placeholder="Dejanos tu consulta, ¡o lo que gustes!"></textarea>
-                   </div>
-    
-                   <div>
-                      <label for="condiciones">¿Queres recibir novedades al e-amil?</label> 
-                      <input type="checkbox" name="acepta" value="1">
-                   </div>
-                   <input class="boton" type="submit" value="Enviar"/>
+  
+                      <h3 data-aos="fade-right">¡Dejanos tu mensaje!</h3>
+  
+                     <div>
+                      <label for="nombre">Nombre:</label>
+                      <br>
+                      <input type="text" name="nombre" placeholder="Tu nombre..."/>
+                     </div>
+      
+                     <div>
+                      <label for="telefono">Telefono:</label>
+                      <br>
+  
+                      <input type="number" name="number" placeholder="Un telefono o celular..."/>
+                     </div>
+                      
+                     <div>
+                         <label for="mail">E-mail:</label>
+                         <br>
+  
+                         <input type="email" name="mail" placeholder="Un e-mail...">
+                     </div>
+      
+                     <div>
+                         <label for="servicios">Elegí el servicio que te gustaría:</label>
+                         <br>
+  
+                         <select name="servicios">
+                             <option value="s">Semipermanente</option>
+                             <option value="k">Kapping</option>
+                             <option value="e">Esmaltado</option>
+                             <option value="b">Babyboomer</option>
+                         </select>
+                     </div>
+      
+                     <div>
+                      <label for="mensaje">Mensaje:</label>
+                      <br>
+  
+                      <textarea name="mensaje" placeholder="Dejanos tu consulta, ¡o lo que gustes!"></textarea>
+                     </div>
+      
+                     <div>
+                        <label for="condiciones">¿Queres recibir novedades al e-mail?</label> 
+                        <input type="checkbox" name="acepta" value="1">
+                     </div>
+                     <input class="boton" type="submit" value="Enviar"/>
                 </form>
-
-              <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.534697605035!2d-58.27372540382429!3d-34.733326425315006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1633749476173!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+                <div class="mapa">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13115.534697605035!2d-58.27372540382429!3d-34.733326425315006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1633749476173!5m2!1ses!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
               </div>
             </div>
           </div>
