@@ -109,29 +109,123 @@
 
         <section class="servicios" class="container-fluid">
             <div class="row justify-content-around servicios">
-                <article class="servicios__item col-sm-10 col-md-5 col-lg-5" data-aos="fade-up">
-                    <img src="../imagenes/manoTres.jpg" alt="dibujo">
-                    <h2> Semipermanente</h2>
-                    </article>
-            
-                    <article class="servicios__item col-sm-10 col-md-5 col-lg-5" data-aos="fade-up">
-                    <img src="../imagenes/manoDos.jpg" alt="dibujo">
-                    <h2>Kapping</h2>
-                    </article>
-        
-                    <article class="servicios__item col-sm-10 col-md-5 col-lg-5" data-aos="fade-up">
-                        <img src="../imagenes/manoUno.png" alt="dibujo">
-                        <h2>Esculpidas</h2>
-                        </article>
-                
-                        <article class="servicios__item col-sm-10 col-md-5 col-lg-5" data-aos="fade-up">
-                        <img src="../imagenes/manoCuatro.png" alt="dibujo">
-                        <h2>Babyboomer</h2>
-                        </article>
+              <!-- SEMIPERMANENTE -->
+              <button type="button" class="btn p-0 col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#semiModal">
+                <article class="servicios__item" data-aos="fade-up">
+                <img src="../imagenes/manoTres.jpg" alt="dibujo">
+                <h2 class="servicios__item--titulo"> Semi <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Semi-->
+              <div class="modal fade " id="semiModal" tabindex="-1"aria-labelledby="semiModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/manoTres.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Semipermanente</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Se utliza esmalte con base de gel.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Efecto natural.</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 15 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KAPPING -->
+              <button type="button" class="btn p-0 col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#kappingModal">
+                <article class="servicios__item" data-aos="fade-up">
+                  <img src="../imagenes/manoDos.jpg" alt="dibujo">
+                  <h2 class="servicios__item--titulo"> Kapping <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Kapping-->
+              <div class="modal fade " id="kappingModal" tabindex="-1"aria-labelledby="kappingModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/manoDos.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Kapping</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Se utliza acrilico fortalecedor.
+                              <br>
+                              Recomendado para uñas debiles o quebradizas.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Efecto natural.</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 20 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ESCULPIDAS -->
+              <button type="button" class="btn p-0 col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#esculpidasModal">
+                <article class="servicios__item" data-aos="fade-up">
+                  <img src="../imagenes/manoUno.png" alt="dibujo">
+                  <h2 class="servicios__item--titulo"> Esculpidas <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Esculpidas-->
+              <div class="modal fade " id="esculpidasModal" tabindex="-1"aria-labelledby="esculpidasModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/manoUno.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Esculpidas</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Se utliza esmalte acrilico sobre la uña natural.
+                              <br>
+                              Se puede dar el largo y forma que desee.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Mayor variedad de diseños.</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 15 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Acrilicas -->
+              <button type="button" class="btn p-0  col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#acrilicasModal">
+                <article class="servicios__item" data-aos="fade-up">
+                  <img src="../imagenes/manoCuatro.png" alt="dibujo">
+                  <h2 class="servicios__item--titulo"> Acrílicas <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Acrilicas-->
+              <div class="modal fade " id="acrilicasModal" tabindex="-1"aria-labelledby="acrilicasModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/manoCuatro.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Acrílicas</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Se utlizan extensionas sobre la uña natural.
+                              <br>
+                              Se puede dar el largo y forma que desee.
+                            <br>
+                              Logra un acabado más prolijo.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Mayor variedad de diseños.</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 15 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
         </section>
-        
     </main>
 
     <footer class="piePagina">

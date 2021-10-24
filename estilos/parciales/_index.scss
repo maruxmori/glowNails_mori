@@ -142,7 +142,7 @@ h4, p {
     justify-content: space-between;
     box-sizing: content-box;
     position: relative;
-    top:5em;
+    top:2em;
         &__titulo{
             padding-left: 2em;
             width: 80vw;
@@ -163,7 +163,7 @@ h4, p {
     justify-content: flex-end;
     box-sizing: content-box;
     position: relative;
-    top: 4.5em;
+    top: 2.5em;
     right: 1em;
     @include tablet{
         top: -5em;
@@ -282,18 +282,15 @@ h4, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vw;
     overflow: hidden;
-    h3{
-        width: 100%;
-        display: block;
+    &__titulo{
         margin-left: 2em;
+        @include tablet{
+            font-size: 2em;
+            }
     }
     img{
         width: 100%;
-        &:hover{
-            box-shadow: 2px 2px black;
-        }
     }
 }
 
