@@ -58,7 +58,7 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    height: 100vw;
+    height: 90vh;
     @include tablet{
         width: auto;
         height: 80vw;
@@ -68,13 +68,18 @@
         height: 50vw;
     }
     &__titulo{
-        font-size: 3em;
+        font-size: 1.8em;
         font-weight: 700;
         text-align: center;
+        @include celular{
+            font-size: 3em;
+        }
     }
     &__nav{
+        display: flex;
+        justify-content: center;
         &--items{
-            background: radial-gradient(#BECEFF, #9966ffab);
+            background: radial-gradient(#BECEFF, #a375ff);
             border-radius: 1rem;
             margin: 1rem;
             padding: 1em;
@@ -83,8 +88,17 @@
             align-content: center;
             
             & img{
-                width: 5em;
+                width: 2.8em;
                 transition: ease-in-out .3s;
+                @include celular{
+                    width: 3em;
+                }
+                @include tablet{
+                    width: 4em;
+                }
+                @include desktop{
+                    width: 5em;
+                }
                     &:hover{
                     transform: scale(1.1);
                         }
@@ -113,6 +127,22 @@
     }
     .form{
         margin: 0;
+        &__caja{
+            padding: 0.5em;
+            margin: 0.5em;
+            @include celular{
+                padding: 1em;
+                margin: 1em;
+            }
+            @include tablet{
+                padding: 1.5em;
+                margin: 1.5em;
+            }
+            @include desktop{
+                padding: 2em;
+                margin: 2em;
+            }
+        }
         & textarea{
             @include tablet{
             width: 15em;

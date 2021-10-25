@@ -279,18 +279,34 @@ h4, p {
 }
 
 .review{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    padding: 0;
     &__titulo{
-        margin-left: 2em;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
         @include tablet{
             font-size: 2em;
             }
     }
+    &__cuadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     img{
-        width: 100%;
+        width: 60vw;
+        @include celular{
+            width: 50vw;
+        }
+        @include tablet{
+            width: 40vw;
+        }
+        @include desktop{
+            width: 25vw;
+        }
     }
 }
 

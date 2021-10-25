@@ -590,20 +590,22 @@ h4, p {
 }
 
 .review {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
+  padding: 0;
 }
 
 .review__titulo {
-  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -612,8 +614,39 @@ h4, p {
   }
 }
 
+.review__cuadros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .review img {
-  width: 100%;
+  width: 60vw;
+}
+
+@media only screen and (min-width: 576px) {
+  .review img {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .review img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .review img {
+    width: 25vw;
+  }
 }
 
 .piePagina {
@@ -883,6 +916,12 @@ h4, p {
   }
 }
 
+.form__titulo {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+}
+
 .preguntas {
   margin: 1em;
 }
@@ -905,9 +944,55 @@ h4, p {
 
 .preguntas__item {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cd8bcc6e), to(#9e60b36e));
-  background: linear-gradient(#cd8bcc6e, #9e60b36e);
+  background-color: #c7c0fde3;
   color: white;
+}
+
+.preguntas__item h3 {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 576px) {
+  .preguntas__item h3 {
+    font-size: 2em;
+  }
+}
+
+.preguntas .links a .fab, .preguntas .links a .fas {
+  margin: 1em;
+  padding: 0.5rem;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: white;
+  text-decoration: none;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  border: solid 1px white;
+  border-radius: 2em;
+}
+
+.preguntas .links a .fab:hover, .preguntas .links a .fas:hover {
+  background-color: white;
+  border-radius: 2em;
+  color: #5C43FF;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.preguntas .iconos .fab, .preguntas .iconos .fas {
+  padding: 0.5rem;
+  margin: 0.3em;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  color: white;
+  text-decoration: none;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.preguntasBorde {
+  border-top: solid 2px white;
+  padding-top: 1rem;
 }
 
 .accordion-button {
@@ -918,7 +1003,7 @@ h4, p {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-color: rgba(137, 43, 226, 0.541);
+  background-color: #702ff1a2;
 }
 
 .nosotros {
@@ -1027,7 +1112,7 @@ h4, p {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 100vw;
+  height: 90vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1045,13 +1130,28 @@ h4, p {
 }
 
 .redes__titulo {
-  font-size: 3em;
+  font-size: 1.8em;
   font-weight: 700;
   text-align: center;
 }
 
+@media only screen and (min-width: 576px) {
+  .redes__titulo {
+    font-size: 3em;
+  }
+}
+
+.redes__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .redes__nav--items {
-  background: radial-gradient(#BECEFF, #9966ffab);
+  background: radial-gradient(#BECEFF, #a375ff);
   border-radius: 1rem;
   margin: 1rem;
   padding: 1em;
@@ -1063,9 +1163,27 @@ h4, p {
 }
 
 .redes__nav--items img {
-  width: 5em;
+  width: 2.8em;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
+}
+
+@media only screen and (min-width: 576px) {
+  .redes__nav--items img {
+    width: 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .redes__nav--items img {
+    width: 4em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .redes__nav--items img {
+    width: 5em;
+  }
 }
 
 .redes__nav--items img:hover {
@@ -1104,6 +1222,32 @@ h4, p {
 
 .contacto .form {
   margin: 0;
+}
+
+.contacto .form__caja {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+@media only screen and (min-width: 576px) {
+  .contacto .form__caja {
+    padding: 1em;
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contacto .form__caja {
+    padding: 1.5em;
+    margin: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contacto .form__caja {
+    padding: 2em;
+    margin: 2em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
