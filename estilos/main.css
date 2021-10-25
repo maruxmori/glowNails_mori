@@ -260,17 +260,17 @@ h4, p {
   font-family: 'Aclonica';
   text-align: center;
   color: white;
-  font-size: 2.5em;
+  font-size: 5em;
   text-shadow: 3px 3px #5c43ffa1;
   position: absolute;
-  top: 4em;
+  top: 2em;
   right: 1rem;
 }
 
 @media only screen and (min-width: 576px) {
   .banner__texto--titulo {
-    font-size: 6em;
-    text-shadow: 3px 3px #5c43ffa1;
+    font-size: 6.5em;
+    text-shadow: 4px 4px #5c43ffa1;
     top: 2em;
     right: 1rem;
   }
@@ -279,7 +279,7 @@ h4, p {
 @media only screen and (min-width: 768px) {
   .banner__texto--titulo {
     font-size: 6em;
-    text-shadow: 3px 3px #5c43ffa1;
+    text-shadow: 5px 5px #5c43ffa1;
     top: 2em;
     right: 1rem;
   }
@@ -296,18 +296,18 @@ h4, p {
 
 .banner__texto h2 {
   position: absolute;
-  top: 9em;
+  top: 5.5em;
   right: 2rem;
   color: #7748cf;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-shadow: 2px 2px #ffffff;
 }
 
 @media only screen and (min-width: 576px) {
   .banner__texto h2 {
-    font-size: 1.3rem;
-    top: 14.5em;
+    font-size: 4em;
+    top: 5.5em;
     right: 2rem;
   }
 }
@@ -331,16 +331,17 @@ h4, p {
 .banner__texto p {
   text-align: right;
   color: white;
-  font-size: 0.9em;
+  font-size: 2em;
   position: absolute;
-  top: 17em;
+  top: 11em;
   right: 2em;
+  text-shadow: 2px 2px 5px #777777;
 }
 
 @media only screen and (min-width: 576px) {
   .banner__texto p {
-    font-size: 1.3em;
-    top: 16em;
+    font-size: 2em;
+    top: 14em;
     right: 2rem;
   }
 }
