@@ -37,14 +37,14 @@ h4, p {
             font-family: 'Aclonica';
             text-align: center;
             color: white;
-            font-size: 5em;
+            font-size: 3em;
             text-shadow: 3px 3px #5c43ffa1;
             position: absolute;
-            top: 2em;
+            top: 3.5em;
             right: 1rem;
 
             @include celular{
-                font-size: 6.5em;
+                font-size: 5.8em;
                 text-shadow: 4px 4px #5c43ffa1;
                 top: 2em;
                 right:1rem;  
@@ -67,16 +67,16 @@ h4, p {
 
         h2{
             position: absolute;
-            top: 5.5em;
+            top: 9em;
             right: 2rem;
             color: $violeta;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 1.5rem;
             text-shadow: 2px 2px #ffffff;
 
             @include celular{
-                font-size: 4em;
-                top: 5.5em;
+                font-size: 3em;
+                top: 7em;
                 right: 2rem;  
             }
 
@@ -96,15 +96,15 @@ h4, p {
         p {
             text-align: right;
             color: white;
-            font-size: 2em;
+            font-size: 0.8em;
             position: absolute;
-            top: 11em;
+            top: 20em;
             right: 2em;
             text-shadow: 2px 2px 5px #777777;
 
             @include celular{
-                font-size: 2em;
-                top: 14em;
+                font-size: 1.2em;
+                top: 21em;
                 right: 2rem;  
             }
 
