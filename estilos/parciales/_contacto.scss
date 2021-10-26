@@ -1,14 +1,14 @@
 @import "media";
 
 .nosotros{
-    background: linear-gradient(#cd8bcca6, #9966FF,#cd8bcca6);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 2em;
+    border-bottom: solid 3px white;
     &__titulo{
         color: white;
+        text-shadow: 3px 3px #a375ff;
         font-size: 4em;
         margin:0;
     }
@@ -30,6 +30,9 @@
     }
     &__texto{
         text-align: center;
+    }
+    & img {
+        width: 80%;    
     }
 }
 .inspiracion{
