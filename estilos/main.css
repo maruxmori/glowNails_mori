@@ -1035,14 +1035,18 @@ h4, p {
   border-bottom: solid 3px white;
 }
 
-.nosotros__titulo {
+.nosotros__texto {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nosotros__texto--titulo {
   color: white;
   text-shadow: 3px 3px #a375ff;
   font-size: 4em;
   margin: 0;
 }
 
-.nosotros__sub {
+.nosotros__texto--sub {
   color: white;
   text-shadow: 4px 4px  #5C43FF;
   text-align: center;
@@ -1051,25 +1055,34 @@ h4, p {
 }
 
 @media only screen and (min-width: 576px) {
-  .nosotros__sub {
+  .nosotros__texto--sub {
     font-size: 2.5em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .nosotros__sub {
+  .nosotros__texto--sub {
     font-size: 3.5em;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .nosotros__sub {
+  .nosotros__texto--sub {
     font-size: 4em;
   }
 }
 
-.nosotros__texto {
+.nosotros__texto--parrafo {
   text-align: center;
+  color: #5C43FF;
+  margin: 1em;
+  border-top: solid 1px white;
+}
+
+.nosotros__mano {
+  position: relative;
+  left: 5em;
+  bottom: 2em;
 }
 
 .nosotros img {

@@ -6,30 +6,41 @@
     justify-content: center;
     padding: 2em;
     border-bottom: solid 3px white;
-    &__titulo{
-        color: white;
-        text-shadow: 3px 3px #a375ff;
-        font-size: 4em;
-        margin:0;
-    }
-    &__sub{
-        color: white;
-        text-shadow: 4px 4px  #5C43FF;
-        text-align: center;
-        font-size: 2em;
-        margin:0;
-        @include celular{
-            font-size: 2.5em; 
-        }
-        @include tablet{
-            font-size: 3.5em;
-        }
-        @include desktop{
-            font-size: 4em; 
-        }
-    }
     &__texto{
-        text-align: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        &--titulo{
+            color: white;
+            text-shadow: 3px 3px #a375ff;
+            font-size: 4em;
+            margin:0;
+        }
+        &--sub{
+            color: white;
+            text-shadow: 4px 4px  #5C43FF;
+            text-align: center;
+            font-size: 2em;
+            margin:0;
+            @include celular{
+                font-size: 2.5em; 
+            }
+            @include tablet{
+                font-size: 3.5em;
+            }
+            @include desktop{
+                font-size: 4em; 
+            }
+        }
+        &--parrafo{
+            text-align: center;
+            color: $azulSombra;
+            margin: 1em;
+            border-top: solid 1px white;
+        }
+    }
+    &__mano{
+        position: relative;
+        left: 5em;
+        bottom: 2em;
     }
     & img {
         width: 80%;    
