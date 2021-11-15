@@ -5,9 +5,11 @@
     align-items: center;
     justify-content: center;
     padding: 2em;
-    border-bottom: solid 3px white;
     &__texto{
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(82, 1, 187, 0.089);
+        border-radius: 3em;
+        border-end-start-radius: 0;
+        border-start-end-radius: 0;
         &--titulo{
             color: white;
             text-shadow: 3px 3px #a375ff;
@@ -16,7 +18,7 @@
         }
         &--sub{
             color: white;
-            text-shadow: 4px 4px  #5C43FF;
+            text-shadow: 2px 2px  #5C43FF;
             text-align: center;
             font-size: 2em;
             margin:0;
@@ -41,27 +43,94 @@
         position: relative;
         left: 5em;
         bottom: 2em;
-    }
-    & img {
-        width: 80%;    
+        & img {
+            @include tablet{
+                width: 80%;
+            }
+        }
     }
 }
 .inspiracion{
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-
-    h3{
-        font-size: 3em;
-    }
-    
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        flex-wrap: wrap;
+    .grid{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        grid-template-areas:"inspo-aa"
+                            "inspo-b"
+                            "inspo-d"
+                            "inspo-f";
+        @include celular{
+            grid-template-areas:"inspo-aa inspo-a"
+                                "inspo-b inspo-c"
+                                "inspo-d inspo-e"
+                                "inspo-f inspo-g";
+            }
+        @include desktopLarge{
+            grid-template-areas:"inspo-aa inspo-aa inspo-d inspo-f inspo-h"
+                                "inspo-a inspo-c inspo-e inspo-g inspo-h";
+            }
+        .inspo-aa{
+            grid-area: inspo-aa;
+            justify-content: flex-end;
+            font-size: 1.5em;
+            @include desktop{
+            font-size: 2.5em;}
+            span{
+                color: white;
+                text-shadow: none;
+                letter-spacing: 1px;
+                font-weight: 900;
+            }
+        }
+        .inspo-a{
+            display: none;
+            @include celular{
+                display: block;
+                grid-area: inspo-a;
+            }
+        }
+        .inspo-b{
+            grid-area: inspo-b;
+            @include desktop{
+                display: none;
+            }
+        }
+        .inspo-c{
+            display: none;
+            @include celular{
+                display: block;
+                grid-area: inspo-c;
+            }
+        }
+        .inspo-d{
+            grid-area: inspo-d;
+        }
+        .inspo-e{
+            display: none;
+            @include celular{
+                display: block;
+                grid-area: inspo-e;
+            }
+        }
+        .inspo-f{
+            grid-area: inspo-f;
+        }
+        .inspo-g{
+            display: none;
+            @include celular{
+                display: block;
+                grid-area: inspo-g;
+            }
+        }
+        .inspo-h{
+            display: none;
+            @include desktopLarge{
+                display: block;
+                grid-area: inspo-h;
+            }
+        }
     }
 }
 .redes{
@@ -72,12 +141,8 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    height: 90vh;
+    height: 50vh;
     @include tablet{
-        width: auto;
-        height: 80vw;
-    }
-    @include desktop{
         width: auto;
         height: 50vw;
     }
@@ -169,9 +234,10 @@
         width: 200px;
         height: 300px;
         overflow: hidden;
-        @include celular{
+        border-radius: 1.5em;
+        @include celularSmall{
             width: 250px;
-            height: 300px;
+            height: 300px; 
         }
         @include tablet{
             width: 300px;

@@ -13,6 +13,7 @@
     }
     @include desktop{
         margin: 6em;
+        margin-top: 0;
     }
     &__titulo{
         text-shadow: 3px 2px $azulSombra;
@@ -25,6 +26,12 @@
             font-size: 1.5em;
             @include celular{
                 font-size: 2em;
+            }
+        }
+        & img{
+            width: 2em;
+            @include celularSmall{
+                width: 3em;
             }
         }
     }

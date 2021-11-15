@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 1em;
     &__caja{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         color: white;
         background: radial-gradient($gradientForm);

@@ -105,10 +105,10 @@
                         </a>
                     </div>
                      
-                    <div class="banner__texto">
-                        <h1 class="banner__texto--titulo" id="tituloPromo" data-aos="fade-up">Promos</h1>
-                        <h2  data-aos="fade-up">Belleza a tu alcance</h2>
-                        <p  data-aos="fade-up">Beneficios distintos para que aprovechar
+                    <div class="banner__texto grid">
+                        <h1 class="banner__texto--titulo a1" id="tituloPromo" data-aos="fade-up">Promos</h1>
+                        <h2 class="a2" data-aos="fade-up">Belleza a tu alcance</h2>
+                        <p class="a3" data-aos="fade-up">Beneficios distintos para que aprovechar
                           <br>
                           ¡Novedades todos los meses!
                         </p>
@@ -178,11 +178,26 @@
     </main>
 
     <footer class="piePagina">
-        <div class="piePagina__logo">
-          <img src="../imagenes/logocirc.svg" alt="logo">
-        </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="piePagina__logo col-sm-2">
+            <img src="../imagenes/logocirc.svg" alt="logo">
+          </div>
+          <div class="piePagina__newsletter col-10 col-sm-6 col-md-4">
 
-        
+                <form class="piePagina__newsletter--form" data-aos="fade-right" action="" method="GET">
+                     <div>
+                         <label for="mail">Suscribite a nuestro newsletter:</label>
+                         <br>
+                         <input type="email" name="mail" placeholder="E-mail...">
+                     </div>
+                     <input class="botonNav" type="image" src="../imagenes/chevron_right_white_24dp.svg"/>
+                </form>
+
+          </div>
+        </div>
+      </div>
+      
         <div class="piePagina__nav">
             <ul class="piePagina__nav--items">
                 <li> <a href="../index.html">Inicio</a></li>

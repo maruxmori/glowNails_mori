@@ -104,10 +104,10 @@
                 </a>
             </div>
              
-            <div class="banner__texto">
-                <h1 class="banner__texto--titulo"  data-aos="fade-up">Turnos </h1>
-                <h2  data-aos="fade-up">Atención online</h2>
-                <p  data-aos="fade-up">Elegí la manera de obtener
+            <div class="banner__texto grid">
+                <h1 class="banner__texto--titulo a1"  data-aos="fade-up">Turnos </h1>
+                <h2 class="a2" data-aos="fade-up">Atención online</h2>
+                <p class="a3" data-aos="fade-up">Elegí la manera de obtener
                   <br>
                   turno que más te guste.</p>
             </div>
@@ -159,44 +159,47 @@
                       TURNOS
                     </button>
                 </h2>
-                <div class="accordion-body">
-                  <div>
-                    <h3>¿Cómo saco turno?</h3>
-                    <p>Podes hacerlo sola desde esta web, rellenando el <a href="turnos.html#turno">formulario</a>  y eligiendo día, horario y servicio que te gustaría.
-                      <br>
-                      También podes contactarnos vía  <a href="mailto:marialauraxmori@gmail.com" target="_blank">mail</a>  o <a href="https://wa.me/1150632347" target="_blank">whatsapp</a>, así nosotras te asesoramos y registramos tu turno.
-                    </p>
-                    <figure class="links">
-                      <a href="mailto:marialauraxmori@gmail.com" target="_blank">
-                        <i class="fas fa-envelope-open"></i>
-                      </a>
-                      <a href="https://wa.me/1150632347" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                      </a>
-                    </figure>
-                  </div>
-
-                  <div class="preguntasBorde">
-                    <h3>¿Hay que señarlo?</h3>
-                    <p>Sí, solo reservamos fecha mediante una seña de por lo menos el 50% del servicio por el cual sacaste turno.
-                    </p>
-
-                    <figure class="iconos">
-                      <i class="fas fa-clipboard-check"></i>
-                    </figure>
-                  </div>
-
-                  <div class="preguntasBorde">
-                    <h3>Ya tengo turno, pero no puedo ir ese día. ¿Qué hago?</h3>
-                    <p>¡No hay problema! Posponemos a la proxima fecha disponible que puedas.
-                      <br>
-                      Para reprogramar o cancelar el turno pedimos 48 hs de anticipación, en caso contrario, se pierde la seña. 
-                    </p>
-                    <figure class="iconos">
-                      <i class="fas fa-hand-holding-heart"></i>
-                    </figure>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div>
+                      <h3>¿Cómo saco turno?</h3>
+                      <p>Podes hacerlo sola desde esta web, rellenando el <a href="turnos.html#turno">formulario</a>  y eligiendo día, horario y servicio que te gustaría.
+                        <br>
+                        También podes contactarnos vía  <a href="mailto:marialauraxmori@gmail.com" target="_blank">mail</a>  o <a href="https://wa.me/1150632347" target="_blank">whatsapp</a>, así nosotras te asesoramos y registramos tu turno.
+                      </p>
+                      <figure class="links">
+                        <a href="mailto:marialauraxmori@gmail.com" target="_blank">
+                          <i class="fas fa-envelope-open"></i>
+                        </a>
+                        <a href="https://wa.me/1150632347" target="_blank">
+                          <i class="fab fa-whatsapp"></i>
+                        </a>
+                      </figure>
+                    </div>
+  
+                    <div class="preguntasBorde">
+                      <h3>¿Hay que señarlo?</h3>
+                      <p>Sí, solo reservamos fecha mediante una seña de por lo menos el 50% del servicio por el cual sacaste turno.
+                      </p>
+  
+                      <figure class="iconos">
+                        <i class="fas fa-clipboard-check"></i>
+                      </figure>
+                    </div>
+  
+                    <div class="preguntasBorde">
+                      <h3>Ya tengo turno, pero no puedo ir ese día. ¿Qué hago?</h3>
+                      <p>¡No hay problema! Posponemos a la proxima fecha disponible que puedas.
+                        <br>
+                        Para reprogramar o cancelar el turno pedimos 48 hs de anticipación, en caso contrario, se pierde la seña. 
+                      </p>
+                      <figure class="iconos">
+                        <i class="fas fa-hand-holding-heart"></i>
+                      </figure>
+                    </div>
                   </div>
                 </div>
+
             </div>
             <!--Segundo acordeon ATENCIÓN -->
             <div class="preguntas__item accordion-item">
@@ -247,10 +250,11 @@
                     <p>Aceptamos tarjeta de credito, débito, Mercado Pago, transferencia bancaria y efectivo.
                     </p>
                     <figure class="iconos">
-                      <i class="fas fa-credit-card"></i>
-                      <i class="fas fa-money-check-alt"></i>
-                      <i class="fas fa-money-bill"></i>
-                      <i class="fab fa-cc-visa"></i>
+                      <img src="../imagenes/visa@2x.png" alt="Visa">
+                      <img src="../imagenes/mastercard@2x.png" alt="mastercard">
+                      <img src="../imagenes/mercadopago@2x.png" alt="Mercado Pago">
+                      <img src="../imagenes/rapipago@2x.png" alt="RapiPago">
+                      <img src="../imagenes/pagofacil@2x.png" alt="Pago Fácil">
                     </figure>
                   </div>
                 </div>
@@ -259,10 +263,26 @@
     </main>
 
     <footer class="piePagina">
-        <div class="piePagina__logo">
-          <img src="../imagenes/logocirc.svg" alt="logo">
-        </div>
 
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="piePagina__logo col-sm-2">
+            <img src="../imagenes/logocirc.svg" alt="logo">
+          </div>
+          <div class="piePagina__newsletter col-10 col-sm-6 col-md-4">
+
+                <form class="piePagina__newsletter--form" data-aos="fade-right" action="" method="GET">
+                     <div>
+                         <label for="mail">Suscribite a nuestro newsletter:</label>
+                         <br>
+                         <input type="email" name="mail" placeholder="E-mail...">
+                     </div>
+                     <input class="botonNav" type="image" src="../imagenes/chevron_right_white_24dp.svg"/>
+                </form>
+
+          </div>
+        </div>
+      </div>
         
         <div class="piePagina__nav">
             <ul class="piePagina__nav--items">

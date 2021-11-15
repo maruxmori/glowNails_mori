@@ -105,17 +105,17 @@
                 </a>
             </div>
              
-            <div class="banner__texto">
-                <h1 class="banner__texto--titulo" id="quienesSomos" data-aos="fade-up">Nosotros</h1>
-                <h2  data-aos="fade-up">Manos que emprenden</h2>
-                <p  data-aos="fade-up">El mundo de la estética nos inspira
+            <div class="banner__texto grid">
+                <h1 class="banner__texto--titulo a1" id="quienesSomos" data-aos="fade-up">Nosotros</h1>
+                <h2 class="a2" data-aos="fade-up">Manos que emprenden</h2>
+                <p class="a3" data-aos="fade-up">El mundo de la estética nos inspira
                   <br>
                   ¡Conocénos!</p>
             </div>
         </section>
 
         <section class="nosotros">
-          <div class="nosotros__mano">
+         <div class="nosotros__mano">
             <img src="../imagenes/manoLinea.svg" alt="Mano lineal">
           </div>
 
@@ -133,30 +133,45 @@
           </div>
         </section>
 
-        <article class="container-fluid">
-          <div class="row">
-            <div class="inspiracion col-11 col-sm-11">
-              <h3>Inspiración</h3>
-              <ul>
-                <li>
-                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=3659243436816176" height="428" width="236" frameborder="0" scrolling="no" ></iframe>
+        <article>
+            <div class="inspiracion">
+              <ul class="grid">
+                <li class="inspo-aa" data-aos="fade-right">
+                  <h3> <span>Nuestra</span><br> inspiración</h3>
+                </li>
+
+                <li class="inspo-a" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=100064422962495048" height="336" width="236" frameborder="0" scrolling="no" ></iframe>
                 </li>
   
-                <li>
-                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=493496071676240150" height="392" width="236" frameborder="0" scrolling="no" ></iframe>
+                <li class="inspo-b" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=281543717877624" height="324" width="236" frameborder="0" scrolling="no" ></iframe>
                 </li>
   
-                <li>
-                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=262616222013592033" height="336" width="236" frameborder="0" scrolling="no" ></iframe>
+                <li class="inspo-c" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=3096293485520179" height="335" width="236" frameborder="0" scrolling="no" ></iframe>
                 </li>
   
-                <li>
+                <li class="inspo-d" data-aos="fade-right">
                   <iframe src="https://assets.pinterest.com/ext/embed.html?id=4644405855686084" height="362" width="236" frameborder="0" scrolling="no" ></iframe>
-  
                 </li>
-  
+
+                <li class="inspo-e" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=3377768462550477" height="336" width="236" frameborder="0" scrolling="no" ></iframe>
+                </li>
+
+                <li class="inspo-f" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=4925880832689522" height="344" width="236" frameborder="0" scrolling="no" ></iframe>
+                </li>
+
+                <li class="inspo-g" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=64387469663513633" height="336" width="236" frameborder="0" scrolling="no" ></iframe>
+                </li>
+
+                <li class="inspo-h" data-aos="fade-right">
+                  <iframe src="https://assets.pinterest.com/ext/embed.html?id=93309023520142152" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                </li>
               </ul>
-          </div>
           </div>
         </article>
 
@@ -242,11 +257,26 @@
     </main>
 
     <footer class="piePagina">
-        <div class="piePagina__logo">
-          <img src="../imagenes/logocirc.svg" alt="logo">
-        </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="piePagina__logo col-sm-2">
+            <img src="../imagenes/logocirc.svg" alt="logo">
+          </div>
+          <div class="piePagina__newsletter col-10 col-sm-6 col-md-4">
 
-        
+                <form class="piePagina__newsletter--form" data-aos="fade-right" action="" method="GET">
+                     <div>
+                         <label for="mail">Suscribite a nuestro newsletter:</label>
+                         <br>
+                         <input type="email" name="mail" placeholder="E-mail...">
+                     </div>
+                     <input class="botonNav" type="image" src="../imagenes/chevron_right_white_24dp.svg"/>
+                </form>
+
+          </div>
+        </div>
+      </div>
+      
         <div class="piePagina__nav">
             <ul class="piePagina__nav--items">
                 <li> <a href="../index.html">Inicio</a></li>

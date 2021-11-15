@@ -37,7 +37,7 @@
                   </button>
                   <a class="navbar-logo" href="index.html"> <img class="logoHeaderAnim" src="imagenes/logo.png" alt="Logo"></a>
                   
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="navbar-item">
                         <a class="navbar-link active" aria-current="page" href="index.html">Inicio</a>
@@ -106,10 +106,10 @@
                 </a>
               </div>
              
-              <div class="banner__texto">
-                <h1 class="banner__texto--titulo"  id="maskText" data-aos="fade-up">Glow Nails</h1>
-                <h2  data-aos="fade-up">Belleza de manos</h2>
-                <p  data-aos="fade-up">Un servicio de alto nivel
+              <div class="banner__texto grid">
+                <h1 class="banner__texto--titulo a1" id="maskText" data-aos="fade-up">Glow Nails</h1>
+                <h2 class="a2" data-aos="fade-up">Belleza de manos</h2>
+                <p class="a3" data-aos="fade-up">Un servicio de alto nivel
                     <br>
                     con productos de calidad,
                     <br>
@@ -159,30 +159,33 @@
         </div>
     </section>
     
-    <div class="row">
-        <section class="conocenosHome col-sm-12 col-md-12 col-lg-6">
-            <h2 class="conocenosHome__titulo" data-aos="fade-up">¡CONOCENOS!</h2>
-            <a class="conocenosHome__boton"data-aos="fade-up" href="vistas/nosotros.html">Ver más</a>
-        </section>
-        
-        <article class="atencionHome col-sm-12 col-md-12 col-lg-6 ">
-            <ul class="atencionHome__lista row" data-aos="fade-up">
-                <li class="atencionHome__lista--link col-sm-12 col-md-4 col-lg-4">
-                    <img src="./imagenes/iconopagos.png" alt="Medios de Pago">
-                    <p>Medios de Pago</p>
-                </li>
-                <li class="atencionHome__lista--link col-sm-12 col-md-4 col-lg-4">
-                    <img src="./imagenes/iconocasa.png" alt="Atención">
-                    <p>Atención a domicilio</p>
-                </li>
-                <li class="atencionHome__lista--link col-sm-12 col-md-4 col-lg-4">
-                    <img src="./imagenes/iconousu.png" alt="Asesoramiento">
-                    <p>Asesoramiento personalizado</p>
-                </li>
-            </ul>
-        </article>
+    <div class="container">
+      <article class="atencionHome row justify-content-around">
+        <div class="atencionHome__item col-3">
+          <img src="./imagenes/tarjeta.svg"  alt="Medios de Pago">
+          <p>Medios de Pago</p>
+        </div>
+        <div class="atencionHome__item col-3">
+          <img src="./imagenes/domicilio.svg" alt="Atención">
+          <p>Atención a domicilio</p>
+        </div>
+        <div class="atencionHome__item col-3">
+          <img src="./imagenes/usuario.svg" alt="Asesoramiento">
+          <p>Asesoramiento personalizado</p>
+        </div>
+      </article>
     </div>
 
+    <section class="conocenosHome">
+        <div class="conocenosHome__caja" data-aos="fade-up">
+            <a class="conocenosHome__caja--link"data-aos="fade-up" href="vistas/promociones.html">
+              <h2>Promociones nuevas</h2>
+              <h5>Todos los meses</h5>
+              <p>Más info</p> 
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+        </div>
+    </section>
     
     <div class="container-fluid">
       <article class="row justify-content-around review">
@@ -190,9 +193,17 @@
           <h3>Nuestras clientas nos recomiendan</h3>
         </div>
         <div class="review__cuadros col-sm-11 col-md-5 col-lg-5">
-          <img src="./imagenes/review.svg" alt="Reviews">
-          <img src="./imagenes/review.svg" alt="Reviews">
-          <img src="./imagenes/review.svg" alt="Reviews">
+          <div class="review__cuadros--texto" data-aos="fade-up">
+            <p> <span>"</span>Me encantó como quedaron mis uñas!<span>"</span> </p>
+          </div>
+
+          <div class="review__cuadros--texto" data-aos="fade-up"> 
+            <p> <span>"</span>Buena atención, muy profesionales.<span>"</span></p>
+          </div>
+
+          <div class="review__cuadros--texto" data-aos="fade-up">
+            <p><span>"</span>Muy amables, 100% recomendado!<span>"</span></p>
+          </div>
         </div>
       </article>
     </div>
@@ -200,11 +211,27 @@
     </main>
 
     <footer class="piePagina">
-        <div class="piePagina__logo">
-          <img src="./imagenes/logocirc.svg" alt="logo">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="piePagina__logo col-sm-2">
+              <img src="./imagenes/logocirc.svg" alt="logo">
+            </div>
+            <div class="piePagina__newsletter col-10 col-sm-6 col-md-4">
+  
+                  <form class="piePagina__newsletter--form" data-aos="fade-right" action="" method="GET">
+                       <div>
+                           <label for="mail">Suscribite a nuestro newsletter:</label>
+                           <br>
+                           <input type="email" name="mail" placeholder="E-mail...">
+                       </div>
+                       <input class="botonNav" type="image" src="./imagenes/chevron_right_white_24dp.svg"/>
+                      </form>
+  
+            </div>
+          </div>
+          
         </div>
-
-        
+    
         <div class="piePagina__nav">
             <ul class="piePagina__nav--items">
                 <li><a href="index.html">Inicio</a></li>

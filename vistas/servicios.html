@@ -105,10 +105,10 @@
                 </a>
             </div>
              
-            <div class="banner__texto">
-                <h1 class="banner__texto--titulo"  data-aos="fade-up">Servicios</h1>
-                <h2  data-aos="fade-up">Diseño & Estilo</h2>
-                <p  data-aos="fade-up">Ofrecemos una variedad de tecnicas y estilos.
+            <div class="banner__texto grid">
+                <h1 class="banner__texto--titulo a1" data-aos="fade-up">Servicios</h1>
+                <h2 class="a2" data-aos="fade-up">Diseño & Estilo</h2>
+                <p class="a3" data-aos="fade-up">Ofrecemos una variedad de tecnicas y estilos.
                   <br>
                   ¡Elegí el tuyo!
                   </p>
@@ -268,16 +268,112 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Decoración -->
+              <button type="button" class="btn p-0  col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#decoModal">
+                <article class="servicios__item" data-aos="fade-up">
+                  <img src="../imagenes/manoCinco.jpg" alt="dibujo">
+                  <h2 class="servicios__item--titulo"> Decoración <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Decoración-->
+              <div class="modal fade " id="decoModal" tabindex="-1"aria-labelledby="decoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/manoCinco.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Decoración & Nail Art</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Es un servicio extra que se puede sumar al tipo de manicura que elijas.
+                              <br>
+                              Pueden ser brillos, pedredría, stamping, o dibujo a mano alzanda.
+                            <br>
+                              En uñas acrilicas, se puede agregar piercings.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Podes personalizarlo a tu gusto</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 15 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          <a href="./nosotros.html#contacto">¡Quiero saber más!
+                          </a>
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Giftcards-->
+              <button type="button" class="btn p-0  col-10 col-sm-8 col-md-5 col-lg-5" data-bs-toggle="modal" data-bs-target="#giftModal">
+                <article class="servicios__item" data-aos="fade-up">
+                  <img src="../imagenes/giftcard.jpg" alt="dibujo">
+                  <h2 class="servicios__item--titulo"> Giftcards <i class="fas fa-chevron-circle-right"></i></h2>
+              </article>
+              </button>
+              <!-- Modal Giftcards-->
+              <div class="modal fade " id="giftModal" tabindex="-1"aria-labelledby="giftModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="card">
+                      <img class="card-img-top" src="../imagenes/giftcardDorso.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h3 class="card-title">Giftcards</h3>
+                          <ul class="card-text">
+                            <li><i class="fas fa-info-circle"></i>Es un servicio extra que se puede sumar al tipo de manicura que elijas.
+                              <br>
+                              Pueden ser brillos, pedredría, stamping, o dibujo a mano alzanda.
+                            <br>
+                              En uñas acrilicas, se puede agregar piercings.</li>
+                            <li><i class="fas fa-hand-sparkles"></i>Podes personalizarlo a tu gusto</li>
+                            <li><i class="fab fa-algolia"></i>Duración: 15 días.</li>
+                            <li></li>
+                          </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          <a href="./nosotros.html#contacto">¡Quiero saber más!
+                          </a>
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
         </section>
     </main>
 
     <footer class="piePagina">
-        <div class="piePagina__logo">
-          <img src="../imagenes/logocirc.svg" alt="logo">
-        </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="piePagina__logo col-sm-2">
+            <img src="../imagenes/logocirc.svg" alt="logo">
+          </div>
+          <div class="piePagina__newsletter col-10 col-sm-6 col-md-4">
 
-        
+                <form class="piePagina__newsletter--form" data-aos="fade-right" action="" method="GET">
+                     <div>
+                         <label for="mail">Suscribite a nuestro newsletter:</label>
+                         <br>
+                         <input type="email" name="mail" placeholder="E-mail...">
+                     </div>
+                     <input class="botonNav" type="image" src="../imagenes/chevron_right_white_24dp.svg"/>
+                </form>
+
+          </div>
+        </div>
+      </div>
+      
         <div class="piePagina__nav">
             <ul class="piePagina__nav--items">
                 <li> <a href="../index.html">Inicio</a></li>
