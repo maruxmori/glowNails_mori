@@ -20,7 +20,7 @@ h2 {
 h3 {
     color: $azulSombra;
     font-size: 2em;
-    text-shadow: 2px 2px  white;
+    text-shadow: 3px 3px  white;
 }
   
 h4, h5, p {
@@ -34,7 +34,7 @@ h4, h5, p {
     &__texto{
         position: relative;
         bottom: 25em;
-        margin-right: 1em;
+        margin-left: 2em;
         @include celularSmall{
             bottom: 35em;
         }
@@ -52,41 +52,32 @@ h4, h5, p {
         }
         .grid{
             display: grid;
-            justify-content: flex-end;
             align-content: center;
-            
+            text-align: left;
+            padding: 2em;
             grid-template-areas:"a1"
                                 "a2"
                                 "a3";
         }
         &--titulo{
             font-family: 'Aclonica';
-            text-align: right;
             color: white;
             font-size: 3em;
             text-shadow: 3px 3px #5c43ffa1;
             @include celularSmall{
                 font-size: 4em;
-                top: 2.5em;
-                right:1rem; 
             }
             @include celular{
                 font-size: 5.8em;
                 text-shadow: 4px 4px #5c43ffa1;
-                top: 2em;
-                right:1rem;  
             }
             @include tablet{
                 font-size: 6em;
                 text-shadow: 5px 5px #5c43ffa1;
-                top: 2em;
-                right:1rem;  
             }
             @include desktop{
                 font-size: 8em;
                 text-shadow: 6px 6px #5c43ffa1;
-                top: 2em;
-                right: 1rem;
             }
         }
         h2{
@@ -94,59 +85,50 @@ h4, h5, p {
             font-weight: bolder;
             font-size: 1.5rem;
             text-shadow: 2px 2px #ffffff;
-            text-align: right;
+            text-align: left;
+            margin-left: 1.5em;
+
             @include celularSmall{
                 font-size: 2em;
                 top: 8em;
-                right:1rem; 
             }
 
             @include celular{
                 font-size: 3em;
                 top: 7em;
-                right: 2rem;  
             }
 
             @include tablet{
                 font-size: 1.3rem;
                 top: 14.5em;
-                right: 2rem;  
             }
 
             @include desktop{
                 font-size: 2rem;
-                top: 13em;
-                right: 2rem;   
+                top: 13em; 
             }
         }
         p {
-            text-align: right;
             color: white;
             font-size: 1em;
-           /* position: absolute;
-            top: 20em;
-            right: 2em;*/
+            margin-left: 2em;
             letter-spacing: 0.1rem;
             @include celularSmall{
                 font-size: 1.5em;
                 top: 13em;
-                right:1rem; 
             }
             @include celular{
                 font-size: 2em;
-                top: 14em;
-                right: 2rem;  
+                top: 14em; 
             }
             @include tablet{
                 font-size: 1.3em;
-                top: 16em;
-                right: 2rem;  
+                top: 16em; 
             }
             @include desktop{
                 font-size: 1.5em;
                 font-weight: 300;
                 top: 20em;
-                right: 2em;
             }
         }
     }
@@ -167,12 +149,66 @@ h4, h5, p {
 }
 
 .serviciosHome{
-    display: flex;
-    align-items: center;
-    margin-bottom: 3em;
+    .grid{
+        display: grid;
+        margin: 0;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "titulo"
+                            "semi"
+                            "kapping"
+                            "esculpidas"
+                            "acrilicas";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin: 1em;
+                         
+        @include celular{
+            grid-template-areas: "titulo semi"
+                                "esculpidas acrilicas"
+                                "kapping kapping";
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 2fr;
+        }
+        @include desktop{
+            grid-template-areas: "titulo esculpidas kapping kapping"
+                                "semi acrilicas kapping kapping";
+            
+            grid-template-columns: 1fr 1fr 2fr; 
+            grid-template-rows: 1fr 1fr;
+        }
+        .titulo{
+            grid-area: titulo;
+            justify-content: center;
+            font-size: 4em;
+            span{
+                color: white;
+                text-shadow: none;
+                font-weight: 900;
+                font-size: 0.8em;
+            }
+        }
+        .semi{
+            grid-area: semi;
+        }
+        .kapping{
+            grid-area: kapping;
+            h3{
+                @include celular{
+                    font-size: 6em;
+                }
+            }
+        }
+        .esculpidas{
+            grid-area: esculpidas;
+        }
+        .acrilicas{
+            grid-area: acrilicas;
+        }
+
+    }
     
     &__serv{
-        padding: 1em;
         display: flex;
         text-align: center;
         overflow: hidden;
@@ -183,7 +219,7 @@ h4, h5, p {
         &--titulo{
             color: white;
             font-size: 3rem;
-            text-shadow: 3px 3px rgba(68, 71, 235, 0.692);
+            text-shadow: 3px 3px rgb(68, 71, 235);
             position: relative;
             top: 3em;
             font-weight: bolder;
@@ -194,6 +230,7 @@ h4, h5, p {
             width: auto;
             position: relative;
             & .overlay{
+                display: none;
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -205,14 +242,15 @@ h4, h5, p {
                 }
                 &:hover .overlay{
                     transition: ease-in-out .4s;
-                    display: none;
+                    display: block;
                    }
             }
         }
 }
 
 .atencionHome{
-    margin-bottom: 2em;
+    margin-bottom: 15em;
+    margin-top: 15em;
     &__item{
     background: linear-gradient($gradientFondo);
     display: flex;
@@ -300,6 +338,7 @@ img{
 .review{
     overflow: hidden;
     padding: 0;
+    height: 80vh;
     &__titulo{
         display: flex;
         text-align: center;
@@ -319,6 +358,7 @@ img{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         &--texto{
             background-image: url(.././imagenes/gradiente.png);
             margin: 1em;
@@ -342,23 +382,24 @@ img{
 
 .piePagina{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #b48fff;
-    padding: 0;
+    padding-top: 2em;
     margin: 0;
     font-size: 1rem;
+    @include desktop{
+        flex-direction: row;
+    }
     &__logo{
-        margin: 1rem;
+        margin: 0.5rem;
         display: flex;
         justify-content: center;
         align-content: center;
         img {
-            width: 6em;
-            @include tablet{
-                width: 5em;
+            width: 4em;
             }
-        } 
     }
     &__newsletter{
         font-family: 'Josefin Sans', 'urbanist';
@@ -415,19 +456,16 @@ img{
                     transition: ease-in-out .3s;
                     &:hover{
                         color: $violeta;
-                        transform: scale(1.01) translateY(-3px);
+                        transform: translateY(-3px);
                     }
                     a {
                         font-size: 0.8em;
                         text-decoration: none;
                         color: white;
-                        margin: 1.5em;
-                            &:hover{
-                                border-bottom: 2px solid white;
-                            }
-                            @include desktop{
-                                font-size: 1em;
-                                }
+                        margin: 1em;
+                        &:hover{
+                            color: $azulSombra;
+                        }
                           }
                   } 
             }
@@ -435,37 +473,34 @@ img{
     &__redes{
             display: flex;
             padding: 0;
-            margin: 0;
+            @include desktop{
+                margin: 3em;
+                margin-right: 6em;
+                }
             &--items {
                 padding: 0;
                 margin: 0;
                 display: flex;
-                overflow-x: hidden;
-                overflow-y: hidden;
+                flex-direction: column;
                 img{
                     height: 2em;
                     width: auto;
                 }
                 li{
-                margin: 1em;
                 transition: ease-in-out .3s;
+                margin: 0.2em;
                 &:hover{
-                   transform: scale(1.2) translateY(-5px);
+                   transform: scale(1.1) translateY(-1px);
+                   color: $azulSombra;
                         }
                 }
                }
-            .far, .fab {
+            .far, .fab, .fas {
                 color: white;
                 font-weight: 100px;
+                &:hover{
+                    color: $azulSombra;
+                 }
             }
-    }       
-    &__coder{
-        font-size: 0.5em;
-        & p {
-            margin: 0;
-        }
-        @include tablet{
-            font-size: 0.8em;
-        }
     }
 }
